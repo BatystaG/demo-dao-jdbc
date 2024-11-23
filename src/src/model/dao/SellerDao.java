@@ -17,4 +17,6 @@ public interface SellerDao {
     Seller findById(Integer id);
     // responsável por buscar no DB todos os vendedores (se não encontrar retorna null)
     List<Seller> findAll();
+    List<Seller> findByDepartment(Department department);
+
 }
